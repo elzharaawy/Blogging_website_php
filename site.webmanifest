@@ -1,0 +1,20 @@
+{
+  "name": "BlogWebsite",
+  "short_name": "Blog",
+  "start_url": "/blogwebsite/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/blogwebsite/img/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/blogwebsite/img/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

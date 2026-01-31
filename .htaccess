@@ -1,0 +1,28 @@
+RewriteEngine On
+
+# Redirect trailing slashes if not a folder
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+# Remove the .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+RewriteBase /blogwebsite/
+
+# Redirect clean URLs to post.php
+RewriteRule ^post/([0-9a-zA-Z_-]+)$ post.php?slug=$1 [NC,L,QSA]
+
+#redirect to 404 page 
+
+ErrorDocument 404 http://localhost/blogwebsite/404
+
+
+RewriteBase /blogwebsite/
+
+# Rewrite rule for singlepostview
+RewriteRule ^singlepostview/([a-zA-Z0-9-]+)$ singlepostview.php?slug=$1 [L,QSA]
+
+
