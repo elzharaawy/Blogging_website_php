@@ -3,9 +3,9 @@ session_start();
 
 define("ROOT_URL", "http://localhost/blogwebsite/");
 define('DB_HOST', 'localhost');
-define('DB_USER', 'elzharaawy');
-define('DB_PASS', 'NAAMegah123');
-define('DB_NAME', 'blogdatabase');
+define('DB_USER', 'your_database_username');
+define('DB_PASS', 'your_database_password');
+define('DB_NAME', 'your_database_name');
 
 
 if (!isset($_SESSION['user-id'])) {
@@ -15,3 +15,4 @@ if (!isset($_SESSION['user-id'])) {
     die();
     header("location: " . ROOT_URL . "signin.php");
 }
+
