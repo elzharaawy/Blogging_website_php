@@ -51,3 +51,9 @@ This project allows users to read blogs seamlessly while admins can manage conte
 
 ## 📂 Project Structure
 
+blogwebsite/admin 
+blogwebsite/js 
+blogwebsite/img
+blogwebsite/config 
+blogwebsite/partials 
+
